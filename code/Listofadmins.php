@@ -107,38 +107,34 @@
             </ul>
         </nav>
 
-        <div class="souscontent">
-            <div class="chnageimage">
-                <img src="../img/homeadmin1.jpg" alt="">
-            </div>
-            <div id="information" class="info">
+        <div id="information" class="info">
 
-                <p>List of Admins</p>
-                <form action="">
-                    <input type="search " placeholder="Search for Admin By email">
-                </form>
-                <a href=" new.php"><button id="new"> New Admins </button></a>
+            <p>List of Admins</p>
+            <form action="">
+                <input type="search " placeholder="Search for Admin By email">
+            </form>
+            <a href=" new.php"><button id="new"> New Admins </button></a>
 
-                <table cellspacing="10">
+            <table cellspacing="10">
 
 
 
-                    <tr class="first">
-                        <td id="head">Email</td>
-                        <td id="head">Username</td>
-                        <td id="head">Password</td>
-                        <td id="head">Phone</td>
-                        <td id="head">Age</td>
-                        <td id="head">Role</td>
-                        <td id="head">Action</td>
-                    </tr>
+                <tr class="first">
+                    <td id="head">Email</td>
+                    <td id="head">Username</td>
+                    <td id="head">Password</td>
+                    <td id="head">Phone</td>
+                    <td id="head">Age</td>
+                    <td id="head">Role</td>
+                    <td id="head">Action</td>
+                </tr>
 
-                    <?php
-                    $admin = "admin";
-                    $sql = " select * from users where role='$admin'";
-                    $result = mysqli_query($conn, $sql);
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        echo '
+                <?php
+                $admin = "admin";
+                $sql = " select * from users where role='$admin'";
+                $result = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo '
                                 <tr>
                                      <td>' . $row['email'] . '</td>
                                      <td>' . $row['username'] . '</td>
@@ -162,17 +158,16 @@
 
 
                          ';
-                    }
+                }
 
 
 
 
-                    ?>
+                ?>
 
-                </table>
+            </table>
 
 
-            </div>
         </div>
     </div>
 
