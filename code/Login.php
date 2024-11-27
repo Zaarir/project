@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <img src="../img/logo.png" alt="">
         </div>
         <div class="text">
-            <p class="name"> Your Porn Website </p>
+            <p class="name"> Your Best Gambling Website</p>
             <p class="desp"> Welcome To Our WebApp Fill The Form to Get in </p>
         </div>
         <div class="login">
