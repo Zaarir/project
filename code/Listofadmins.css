@@ -168,6 +168,10 @@ i {
     right: 0.3cm;
 }
 
+.souscontent {
+    display: flex;
+    flex-direction: column;
+}
 
 .info {
     width: 100%;
