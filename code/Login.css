@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+.loginbox {
+    overflow: hidden;
+    width: 45%;
+    margin-left: 7%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.logo {
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 50%;
+    height: 70px;
+    overflow: hidden;
+    margin-left: 26%;
+    /*
+        margin-left: 2cm; */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+
+    cursor: pointer;
+    margin-top: 1%;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    width: 58%;
+
+    margin-left: 23%
+}
+
+.desp {
+
+    letter-spacing: 1px;
+    margin-left: 32%;
+    margin-top: 2%;
+    font-size: 15px;
+    width: 38%;
+}
+
+.login {
+
+    margin-top: 2%;
+
+}
+
+input {
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 58%;
+    margin-left: 19%;
+    padding-left: 8%;
+    margin-bottom: 3%;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+}
+
+label {
+
+    font-size: 18px;
+    margin-left: 19%;
+
+}
+
+input[type="checkbox"] {
+    position: relative;
+    transform: scale(1.4);
+    right: 5%;
+    bottom: 0.5cm;
+}
+
+a {
+    position: relative;
+    left: 75%;
+    text-decoration: none;
+    color: blue;
+    border-bottom: 1px solid blue;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    border: none;
+    width: 67%;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    outline: 1px solid white;
+    background-color: rgba(40, 146, 222, 255);
+    color: white;
+}
+
+.fa-envelope {
+    position: relative;
+    right: 66%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-lock {
+
+    position: relative;
+    right: 66%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#eye {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    right: 11%;
+    font-size: 22px;
+    font-size: 20px;
+}
+
+#rl {
+    position: relative;
+    right: 10%;
+}
+
+select {
+    margin-bottom: 27px;
+    font-size: 15px;
+    position: relative;
+    right: 8%;
+}
+
+select option {
+    font-size: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.error {
+    font-size: 22px;
+    color: red;
+    margin-left: 27%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .loginbox {
+        width: 70%;
+        /* Adjust width for tablets */
+        margin-left: 15%;
+        /* Center the container */
+        padding: 2%;
+        /* Add padding */
+    }
+
+    .logo img {
+        width: 120%;
+        /* Adjust logo size */
+        height: auto;
+    }
+
+    .name,
+    .desp {
+        width: 80%;
+        /* Adjust text block width */
+        margin-left: 10%;
+        /* Center text */
+    }
+
+    input {
+        width: 80%;
+        /* Adjust input width */
+        margin-left: 10%;
+        /* Center inputs */
+    }
+}
+
+@media (max-width: 768px) {
+    .loginbox {
+        width: 90%;
+        /* Full width for mobile */
+        margin-left: 5%;
+        /* Center the container */
+    }
+
+    .logo {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .name,
+    .desp {
+        width: 90%;
+        /* Full width */
+        margin-left: 5%;
+        /* Center */
+        font-size: 24px;
+        /* Reduce font size */
+    }
+
+    input,
+    label,
+    select,
+    input[type="submit"] {
+        width: 90%;
+        /* Full width */
+        margin-left: 5%;
+        /* Center */
+    }
+}
+
+@media (max-width: 480px) {
+    .loginbox {
+        padding: 5%;
+        /* Increase padding for smaller screens */
+    }
+
+    .name,
+    .desp {
+        font-size: 20px;
+        /* Smaller font for small screens */
+    }
+
+    input,
+    input[type="submit"] {
+        font-size: 16px;
+        /* Adjust input font size */
+    }
+
+    label {
+        font-size: 16px;
+        /* Smaller font */
+    }
+
+    .fa-envelope,
+    .fa-lock,
+    #eye {
+        right: 60%;
+        /* Adjust positioning */
+        font-size: 18px;
+        /* Reduce icon size */
+    }
+}

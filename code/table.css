@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    /* Remove all borders from the table */
+}
+
+td,
+th {
+    border: none;
+    /* Remove all borders from table cells */
+}
+
+.first-row {
+    border-bottom: 2px solid black;
+    /* Add a thicker border below the first row */
+}
